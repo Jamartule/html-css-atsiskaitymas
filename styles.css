@@ -1,0 +1,323 @@
+/* Reset default body styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* Navigation bar styles */
+nav {
+  color: #32292f; /* Dark text color */
+  background-color: white; /* White background for nav */
+}
+
+/* Container for padding around content */
+.container {
+  padding: 0 20px;
+}
+
+/* Flex container to align logo and menu */
+.flex-container {
+  display: flex;
+}
+
+nav .flex-container {
+  justify-content: space-between; /* Space between logo and menu */
+}
+
+/* Logo text styling */
+.logo-text a {
+  font-size: 16px;
+  padding: 10px 0;
+  font-weight: 700;
+  color: #32292f;
+  text-decoration: none;
+}
+
+/* List styles for navigation links */
+nav ul li {
+  list-style: none; /* Removes default bullet points */
+}
+
+/* Link styles for nav items */
+nav ul li a {
+  color: #32292f;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 16px;
+}
+
+/* Main header container styling */
+.pirmas {
+  width: 100%;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* First section with text and image */
+.first-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+  gap: 20px;
+  background: linear-gradient(to right, #f0f0f0 60%, white 40%);
+}
+
+/* Left text box in the first section */
+.box1 {
+  flex: 1;
+  max-width: 40%;
+  padding: 20px;
+  z-index: 1;
+}
+
+.box1 h1 {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 200;
+  line-height: 56px;
+  text-align: left;
+}
+.box1 p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+}
+
+/* Image container for first section */
+.image-container {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1;
+}
+
+.image-container img {
+  width: 110%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.btn-first {
+  background-color: #32292f;
+  color: #ffffff;
+}
+
+/* Responsive layout for first-page */
+@media (max-width: 768px) {
+  .first-page {
+    flex-direction: column;
+    background: white;
+  }
+  .box1,
+  .image-container {
+    max-width: 100%;
+  }
+}
+
+/* Full-width text div styling */
+.full-width-text {
+  width: 100%;
+  height: 140px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-width-text p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+/* 50/50 split section styling */
+.section-50-50 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+  gap: 20px;
+  background-color: white;
+}
+
+/* Left text section for 50/50 split */
+.section-50-50 .section-left {
+  flex: 1;
+  max-width: 45%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns items to the left */
+  gap: 10px;
+}
+
+.section-50-50 .section-left h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.section-50-50 .section-left p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Right image section for 50/50 split */
+.section-50-50 .section-right {
+  flex: 1;
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.section-50-50 .section-right img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* 50/50 reverse split section styling */
+.section-50-50-reverse {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+  gap: 20px;
+  background-color: white;
+}
+
+/* Left image section for reverse split */
+.section-50-50-reverse .section-left {
+  flex: 1;
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.section-50-50-reverse .section-left img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* Right text section for reverse split */
+.section-50-50-reverse .section-right {
+  flex: 1;
+  max-width: 45%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.section-50-50-reverse .section-right h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.section-50-50-reverse .section-right p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Button styling to fit content */
+button {
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  margin: 0;
+}
+
+/* Hover effect for button */
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Responsive layout for 50/50 sections */
+@media (max-width: 768px) {
+  .section-50-50,
+  .section-50-50-reverse {
+    flex-direction: column;
+  }
+  .section-50-50 .section-left,
+  .section-50-50 .section-right,
+  .section-50-50-reverse .section-left,
+  .section-50-50-reverse .section-right {
+    max-width: 100%;
+  }
+}
+
+footer {
+  color: #32292f; /* Dark text color */
+  background-color: white; /* White background for nav */
+}
+
+footer .flex-container {
+  justify-content: flex-start; /* Space between logo and menu */
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li a {
+  color: #32292f;
+  text-decoration: none;
+  margin-left: 30px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+}
+.copyright {
+  padding: 20px 0;
+  color: #32292f;
+
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-text2 a {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #32292f;
+  text-decoration: none;
+}
